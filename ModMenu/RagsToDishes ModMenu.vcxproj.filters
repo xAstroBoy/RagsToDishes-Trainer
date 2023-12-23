@@ -27,9 +27,6 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CheatsCode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ConsoleUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -73,6 +70,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessEventLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleCmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputCmd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -119,68 +134,50 @@
     <ClCompile Include="SDK\UMG_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_OrderManager_Peasants_Package.cpp">
+    <ClCompile Include="SDK\BP_RA_SL_Manager_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_OrderManager_Package.cpp">
+    <ClCompile Include="SDK\BP_RRM_RoxyTalkie_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_5Minute_Package.cpp">
+    <ClCompile Include="SDK\SWGVRBase_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Customer_Package.cpp">
+    <ClCompile Include="SDK\BP_VRPlayer_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Porridge_Pot_Package.cpp">
+    <ClCompile Include="SDK\BP_StaticBlinder_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_EndOfStage_Package.cpp">
+    <ClCompile Include="SDK\BP_BlinderVolume_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_EndOfStage_Royals_Package.cpp">
+    <ClCompile Include="SDK\ABP_BS_RM_Roxy_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_LoopManager_Nobles_Package.cpp">
+    <ClCompile Include="SDK\SWGCommonGame_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_LoopManager_Peasants_Package.cpp">
+    <ClCompile Include="SDK\Thumper_Package.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_LoopManager_Royals_Package.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="StringUtils.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Oven_Nobles_Wall_Package.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="Cheats.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Oven_Package.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="ProcessEventLogger.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Royals_Oven_Package.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="EngineUtils.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Soup_Pot_Package.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="ConsoleCmds.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BP_Stew_Pot_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BP_Grill_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BP_Upgraded_Grill_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BP_Ingredient_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BP_Cake_Pan_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BP_LoopManager_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BP_Rotisserie_Package.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="InputCmd.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

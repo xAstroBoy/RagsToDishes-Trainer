@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "ConsoleUtils.h"
-
+#include <string>
 #include <iostream>
 #include <sstream>
 #include "stdafx.h"
@@ -12,13 +12,37 @@ namespace ConsoleTools
 		std::cout << text << std::endl;
 	}
 
-	std::string bool_as_text(bool b)
+	void ClearConsole()
 	{
-		std::stringstream converter;
-		converter << std::boolalpha << b;   // flag boolalpha calls converter.setf(std::ios_base::boolalpha)
-		return converter.str();
+		system("cls");
 	}
 
+	std::string AskInput(std::string question)
+	{
+		std::string input;
+		std::cout << question << std::endl;
+		std::getline(std::cin, input);
+		return input;
+	}
+
+	void SetTitle(const std::wstring& title) {
+		if (!SetConsoleTitleW(title.c_str())) {
+			// Handle error, check GetLastError for more information
+			DWORD error = GetLastError();
+			// Add error handling logic here
+		}
+	}
+
+	void SetTitle(const std::string& title) {
+		// Convert narrow string to wide string
+		std::wstring wideTitle(title.begin(), title.end());
+
+		if (!SetConsoleTitleW(wideTitle.c_str())) {
+			// Handle error, check GetLastError for more information
+			DWORD error = GetLastError();
+			// Add error handling logic here
+		}
+	}
 
 	bool ShowConsole() {
 		if (AllocConsole() != NULL) {
@@ -30,5 +54,4 @@ namespace ConsoleTools
 		}
 		return false;
 	}
-
 }
