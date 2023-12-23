@@ -174,6 +174,10 @@
     <ClCompile Include="ConsoleUtils.cpp" />
     <ClCompile Include="EngineUtils.cpp" />
     <ClCompile Include="ProcessEventLogger.cpp" />
+    <ClCompile Include="SDK\BP_Ale_Barrel_Package.cpp" />
+    <ClCompile Include="SDK\BP_Drinks_Barrels_Nobles_Package.cpp" />
+    <ClCompile Include="SDK\BP_Drinks_Taps_Royals_Package.cpp" />
+    <ClCompile Include="SDK\BP_Platter_Meats_Rotisserie_Package.cpp" />
     <ClCompile Include="StringUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -189,7 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mem.cpp" />
-	<ClCompile Include="SDK\BasicTypes_Package.cpp" />
+    <ClCompile Include="SDK\BasicTypes_Package.cpp" />
     <ClCompile Include="SDK\BP_5Minute_Package.cpp" />
     <ClCompile Include="SDK\BP_Cake_Pan_Package.cpp" />
     <ClCompile Include="SDK\BP_Customer_Package.cpp" />

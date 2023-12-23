@@ -31,6 +31,8 @@ namespace ConsoleCmd
 		Cheats::FastSoups();
 		Cheats::FastGrill();
 		Cheats::FastCakePan();
+		Cheats::FastDrinks();
+
 	}
 
 	void FixCustomersCommand() {

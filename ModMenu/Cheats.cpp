@@ -282,6 +282,17 @@ namespace Cheats
 				}
 			}
 		}
+		auto Rotisseries2 = CG::UObject::FindObjects<CG::ABP_Platter_Meats_Rotisserie_C>();
+		if (!Rotisseries2.empty())
+		{
+			for (auto& mods : Rotisseries2)
+			{
+				if (mods != nullptr)
+				{
+					mods->Speed = static_cast<float>(0.01);
+				}
+			}
+		}
 
 	}
 	void FastCakePan()
@@ -290,6 +301,45 @@ namespace Cheats
 		if (!CakePan.empty())
 		{
 			for (auto& mods : CakePan)
+			{
+				if (mods != nullptr)
+				{
+					mods->Speed = static_cast<float>(0.01);
+				}
+			}
+		}
+		
+	}
+
+	void FastDrinks()
+	{
+		auto Barrel = CG::UObject::FindObjects<CG::ABP_Ale_Barrel_C>();
+		if (!Barrel.empty())
+		{
+			for (auto& mods : Barrel)
+			{
+				if (mods != nullptr)
+				{
+					mods->Speed = static_cast<float>(0.01);
+				}
+			}
+		}
+		auto Nobles = CG::UObject::FindObjects<CG::ABP_Drinks_Barrels_Nobles_C>();
+		if (!Nobles.empty())
+		{
+			for (auto& mods : Nobles)
+			{
+				if (mods != nullptr)
+				{
+					mods->Speed = static_cast<float>(0.01);
+				}
+			}
+		}
+
+		auto Royals = CG::UObject::FindObjects<CG::ABP_Drinks_Taps_Royals_C>();
+		if (!Royals.empty())
+		{
+			for (auto& mods : Royals)
 			{
 				if (mods != nullptr)
 				{
@@ -352,6 +402,7 @@ namespace Cheats
 				FastSoups();
 				FastGrill();
 				FastCakePan();
+				FastDrinks();
 			}
 			catch (...) {}
 		}

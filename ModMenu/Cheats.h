@@ -19,6 +19,7 @@ namespace Cheats
 	void FastSoups();
 	void FastGrill();
 	void FastCakePan();
+	void FastDrinks();
 	void CustomerWaitHolyshitWTF();
 	void CheatExecutorThread();
 }
